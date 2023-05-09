@@ -1,0 +1,96 @@
+
+.form {
+
+    max-width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    /* border: 1px solid gray; */
+    background-color: rgb(89, 7, 219);
+    border-radius: 8px;
+    overflow:hidden;
+} 
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn-sub,#edit-save {
+    background-color: #ffeb3b;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+input[type="submit"]:hover , #edit-save:hover {
+    transition: all 0.2s;
+    background-color: #f5e021;
+}
+#edit-save{
+    display: none;
+    text-align: center;
+}
+#todo-list{
+    width: 75%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    padding: 10px;
+    width: 250px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #ffeb3b;
+    color: black;
+    overflow: auto;
+}
+.card:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: #f1da0b;
+    /* color:black; */
+}
+.btn{
+   position: relative;
+   background: none;
+   border: none;
+   float: right;
+   padding: 6px;
+   font-weight: bold;
+   border-radius: 4px;
+   margin: 0px 5px;
+   cursor: pointer;
+   transition: all 0.2s;
+   background-color: aqua;
+}
+
+.card-content{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .header h3{
+        text-align: center;
+       
+
+    }
+    .card{
+        margin: 10px auto;
+    }
+}
+

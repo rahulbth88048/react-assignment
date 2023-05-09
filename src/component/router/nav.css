@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+  }
+  body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    
+  }
+  .navbar{
+    height: 70px;
+    width: 100%;
+    /* padding: 14px 30px; */
+    background-color: rebeccapurple;
+    position: relative;
+  }
+  .navbar .nav-header{
+    display: inline;
+  }
+  .navbar .nav-header .nav-logo{
+    display: inline-block;
+    
+    /* line-height: 70px; */
+    
+  }
+  .logo{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 70px;
+    margin-left: 20px;
+    color: white;
+  }
+  .navbar .nav-links{
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+   
+  .navbar .nav-links{
+    display: inline-block;
+    /* padding: 5px 15px; */
+    margin-right: 20px;
+    line-height: 70px;
+    font-size: 17px;
+    color: rgb(9, 14, 90);
+  }
+  .navbar .nav-links .links{
+    padding: 22px 30px;
+    text-decoration: none;
+    font-weight: 550;
+    color: white;
+  }
+  /* Hover effects */
+  .navbar .nav-links a:hover{
+    color: #f4d1d1;
+  }
+   
+
+  .navbar #nav-check, .navbar .nav-btn{
+    display: none;
+  }
+   
+  @media (max-width:900px) {
+    .navbar .nav-btn{
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    .navbar .nav-btn label {
+      display: inline-block;
+      width: 80px;
+      height: 70px;
+      padding: 25px;
+    }
+    .navbar .nav-btn label span {
+      display: block;
+      height: 10px;
+      width: 25px;
+      border-top: 3px solid #eee;
+    }
+    .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+      background-color: rgb(224, 6, 35);
+      /* border: 1px solid rebeccapurple; */
+    }
+    .navbar .nav-links{
+      position: absolute;
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      /* background-color: rgb(91, 99, 218); */
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 70px;
+      right: 0px;
+      /* left: 0px; */
+    }
+    .navbar .nav-links .links {
+      display: block;
+      padding: 0px 0px;
+    }
+   
+    
+    .navbar #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+      display: none;
+    }
+   
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+      background-color: #1b0bd0;
+      display: block;
+    }
+    .navbar .nav-links {
+      padding: 10px 40px ;
+      font-size:  18px;
+      font-weight: bold;
+      color: rgb(9, 14, 90);
+    }
+     
+   
+  }
+  
